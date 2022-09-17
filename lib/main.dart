@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView.builder(
           itemCount: Recipe.samples.length,
           itemBuilder: (BuildContext context, int index) {
-            return Text(Recipe.samples[index].label);
+            return buildRecipeCard(Recipe.samples[index]);
           },
         ),
       ),
