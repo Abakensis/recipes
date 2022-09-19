@@ -13,15 +13,15 @@ class Recipe {
     ),
     Recipe(
       "Soupe de tomate",
-      "assets/27729023535_a57606cc1be.jpg",
+      'assets/27729023535_a57606c1be.jpg',
     ),
     Recipe(
       "grillade au fromage",
-      "assets/3187380632_5056654a19_b.jpg",
+      'assets/3187380632_5056654a19_b.jpg',
     ),
     Recipe(
       'cookies au chocolat',
-      'assets/159921027171_b92f4cc00a_b.jpg',
+      'assets/15992102771_b92f4cc00a_b.jpg',
     ),
     Recipe(
       'Tacos aux salades',
