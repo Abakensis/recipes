@@ -12,11 +12,11 @@ class RecipeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final ThemeData theme = ThemeData();
     return MaterialApp(
-        title: 'Calculateur des parts',
+        title: 'Calculateur de recettes',
         theme: theme.copyWith(
           colorScheme: theme.colorScheme.copyWith(
             primary: Colors.grey,
-            secondary: Colors.black,
+            secondary: Colors.yellow,
           ),
         ),
         home: const MyHomePage(title: 'Calculateur des parts'));
@@ -43,7 +43,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView.builder(
           itemCount: Recipe.samples.length,
           itemBuilder: (BuildContext context, int index) {
-            return buildRecipeCard(Recipe.samples[index]);
+            return GestureDetector(onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return Text('Page des details');
+                  },
+                ),
+              );
+            });
           },
         ),
       ),
